@@ -49,13 +49,14 @@ The API will be accessible at http://127.0.0.1:8000/.
 
 ## Endpoint
 
-    Request
-        GET /api/classify-numbers?numbers=<integer>
+GET /api/classify-numbers?numbers=<integer>
+
+    Requests:
         Method: GET
         Headers: NoNE
         Body: None
 
-    Response
+    Response:
         Status: 200 OK
         Content-Type: application/json
 
