@@ -7,9 +7,13 @@ from sympy import isprime, is_perfect
 
 
 def sum_of_digits(n):
+    if n < 0:
+        n = n * -1
     return sum(int(digit) for digit in str(abs(n)))
 
 def is_armstrong(n):
+    if n < 0:
+        n = n * -1
     digits = [int(d) for d in str(n)]
     power = len(digits)
     return sum(d**power for d in digits) == n
