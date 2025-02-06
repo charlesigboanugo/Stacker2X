@@ -49,23 +49,25 @@ The API will be accessible at http://127.0.0.1:8000/.
 
 ## Endpoint
 
-GET /api/classify-numbers?numbers=<integer>
+    GET /api/classify-numbers?numbers=<integer>
 
     Requests:
+
         Method: GET
         Headers: NoNE
         Body: None
 
     Response:
+    
         Status: 200 OK
         Content-Type: application/json
 
     Example Usage
-     ```sh
-    curl -X GET https://stacker2x.onrender.com/api/classify-numbers?numbers=371
+    
+        curl -X GET https://stacker2x.onrender.com/api/classify-numbers?numbers=371
 
     Example response:
-     ```sh
+     
             {
             "number": 371,
             "is_prime": false,
@@ -76,13 +78,13 @@ GET /api/classify-numbers?numbers=<integer>
         }
     
     Example (Bad Requests)
-    ```sh
+   
         curl -X GET https://stacker2x.onrender.com/api/classify-numbers?
         curl -X GET https://stacker2x.onrender.com/api/classify-numbers?numbers=alphabet
         curl -X GET https://stacker2x.onrender.com/api/classify-numbers?numbers
 
     Example (Bad response)
-    ```sh
+    
         {
             "number": "alphabet",
             "error": true
