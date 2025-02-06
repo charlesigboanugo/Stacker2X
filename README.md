@@ -48,9 +48,9 @@ The API will be accessible at http://127.0.0.1:8000/.
 # API Documentation
 
 ## Endpoint
-    GET /api/classify-numbers?numbers=<integer>
 
     Request
+        GET /api/classify-numbers?numbers=<integer>
         Method: GET
         Headers: NoNE
         Body: None
